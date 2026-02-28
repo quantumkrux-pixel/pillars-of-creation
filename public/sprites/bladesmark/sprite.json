@@ -1,0 +1,18 @@
+{
+  "_comment": "Place this file at public/sprites/bladesmark/sprite.json",
+
+  "fps":        16,
+  "scale":      1.5,
+  "idleFrame":  0,
+  "frameCount": 8,
+  "directions": ["down", "up", "left", "right"],
+
+  "_notes": {
+    "fps":        "Animation speed. 8 = smooth walk, 4 = slower/heavier feel.",
+    "scale":      "Render size multiplier over TILE_SIZE (32px). 1.5 = 48px sprite.",
+    "idleFrame":  "Index of the frame shown when standing still. Usually 0.",
+    "frameCount": "Number of PNG files per direction subfolder (0.png … 3.png for 4 frames). Omit this field entirely to let the loader auto-detect by probing until a 404.",
+    "directions": "Which subfolders exist. Any direction not listed here will fall back to 'down' frames. You can ship a sprite with only 'down' frames and all directions will use them (useful for simple objects).",
+    "mirror_left": "If you don't have a 'left' subfolder, remove 'left' from directions. PlayerSprite will automatically mirror the 'right' frames for left-facing movement."
+  }
+}
